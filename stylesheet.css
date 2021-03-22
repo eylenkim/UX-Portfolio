@@ -50,15 +50,22 @@ p {
 
 
 
-/***** Column / Grid ******/
+/***** Column / Grid / Full Page******/
 body {
 	margin: 0 auto !important;
-    width: 1118px;
+    max-width: 1300px;
     position: relative;
 }
 
 * {
 	background-color: #FCFCFC !important;
+}
+
+a { text-decoration: none !important; cursor: pointer; color: black !important; transition: .5s;}
+a p:hover, p>a:hover, a:hover {
+	color: #B7410E !important;
+	transition: .5s;
+	font-weight: bold;
 }
 
 
@@ -181,10 +188,12 @@ body {
 
 .box {
 	width: 100%;
-	height: 264px;
+	height: 267px;
 	filter: drop-shadow(1px 7px 20px rgba(0, 0, 0, 0.1));
 	margin-top: 32px;
+	background-color: #b74110 !important;
 }
+
 
 .box img 
 {
@@ -192,11 +201,26 @@ body {
     height: 100%;
     object-fit: cover;
     overflow: hidden;
+    transition: .4s;
+}
+
+.box-title {
+	padding-top: 16px;
+}
+
+.box img:hover {
+	transform: translate(10px, 10px);
+	transition: .4s;
+	box-shadow: 1px 7px 18px rgb(0 0 0 / 9%);
 }
 
 
 
-
+@media (max-idth: 1300px) {
+	#main-menu {
+	margin: 0 20px;
+}
+}
 
 
 /***** Tablet  ******/
