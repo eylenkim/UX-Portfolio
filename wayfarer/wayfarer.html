@@ -16,145 +16,245 @@
         <link rel="icon" type="image/png" href="/assets/favicon.png" />
     </head>
     <body>
-        <header>
-            <div class="nav-wrap">
-                <nav id="main-menu">
-                    <ul class="nav-left">
-                        <li><a href="../home.html"><img src="../assets/Logo.svg"/></a></li>
-                    </ul>
-                    <ul class="nav-center">
-                        <li><a href="#">UX/UI</a></li>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">Visual Design</a></li>
-                    </ul>
-                    <ul class="nav-right">
-                        <li><a href="#">About Me</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                    <span id="hamburger-bar" onclick="openNav()">
-                        <img src="../assets/nav-bar.svg" />
-                    </span>
-                    <a href="javascript:void(0)"
-                        class="closebtn" onclick="closeNav()">
-                        ×
-                    </a>
-                    
-                </nav>
-                <! -- Responsive Nav Bar -->
-                <div id="myNav" class="overlay">
-                    <div class="overlay-content">
-                        <a href="#">UX/UI</a>
-                        <a href="#">Web Development</a>
-                        <a href="#">Visual Design</a>
-                        <a href="#">About Me</a>
-                        <a href="#">Contact</a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        
-   
-    <section class="mt-176">
-            <div class="container">
-                <div class="row">
-                    <h1 class="project-title">
-                        Wayfarer
-                    </h1>
-                    <h4 class="project-role">
-                        UX & UI Design / Prototyping / Brand Identity 
-                    </h4>
-                </div>
-                 <div class="row">
-                    <div class="col-xl-6">
-                        <img style="height: 500px;" class="pic-shadow header-pic" src="pic1.png">
-                    </div>
-                    <div class="col-xl-6">
-                        <img style="height: 500px;" class="pic-shadow header-pic" src="boats.jpg">
-                    </div>
-                </div>
-            </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-        <footer class="mt-112 mb-48">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm">
-                        <div class="row footer-links">
-                            <div class="col-md">
-                                <a href="https://linkedin.com/in/eylenkim" target="_blank">
-                                    <h4>
-                                    LinkedIn
-                                    </h4>
-                                </a>
-                            </div>
-                            <div class="col-md">
-                                <a href="https://behance.net/eylen" target="_blank">
-                                    <h4>
-                                    Behance
-                                    </h4>
-                                </a>
-                            </div>
-                            <div class="col-md">
-                                <a href="https://twitter.com/EylenAndTheCode" target="_blank">
-                                    <h4>
-                                    Twitter
-                                    </h4>
-                                </a>
-                            </div>
-                            <div class="col-md">
-                                <a href="https://github.com/eylenkim" target="_blank">
-                                    <h4>
-                                    Github
-                                    </h4>
-                                </a>
-                            </div>
-                            <div class="col-md">
-                                <a href="https://medium.com/@eylenkim" target="_blank">
-                                    <h4>
-                                    Medium
-                                    </h4>
-                                </a>
-                            </div>
+        <div class="nav-wrapper">
+            <header>
+                <div class="nav-wrap">
+                    <nav id="main-menu">
+                        <ul class="nav-left">
+                            <li><a href="../home.html"><img src="../assets/Logo.svg"/></a></li>
+                        </ul>
+                        <ul class="nav-center">
+                            <li><a href="#">UX/UI</a></li>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Visual Design</a></li>
+                        </ul>
+                        <ul class="nav-right">
+                            <li><a href="#">About Me</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <span id="hamburger-bar" onclick="openNav()">
+                            <img src="../assets/nav-bar.svg" />
+                        </span>
+                        <a href="javascript:void(0)"
+                            class="closebtn" onclick="closeNav()">
+                            ×
+                        </a>
+                        
+                    </nav>
+                    <! -- Responsive Nav Bar -->
+                    <div id="myNav" class="overlay">
+                        <div class="overlay-content">
+                            <a href="#">UX/UI</a>
+                            <a href="#">Web Development</a>
+                            <a href="#">Visual Design</a>
+                            <a href="#">About Me</a>
+                            <a href="#">Contact</a>
                         </div>
                     </div>
-                    <div class="col-sm copyright">
-                        <h4>&copy; Eylen Kim <script>document.write(new Date().getFullYear())</script> &ndash; Self-Coded ✶</h4>
+                </div>
+            </header>
+            
+            
+            <section class="mt-176">
+                <div class="container">
+                    <div class="row">
+                        <h1 class="project-title">
+                        Wayfarer
+                        </h1>
+                        <h4 class="project-role">
+                        UX & UI Design / Prototyping / Brand Identity
+                        </h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <img style="height: 500px;" class="pic-shadow header-pic" src="pic1.png">
+                        </div>
+                        <div class="col-xl-6">
+                            <img style="height: 500px;" class="pic-shadow header-pic" src="boats.jpg">
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
-        
-        <script>
-        function openNav() {
-        document.getElementById(
-        "myNav").style.height = "100%";
-        document.getElementById("hamburger-bar").style.display="none";
-        document.querySelector(".closebtn").style.display="block";
-        
-        }
-        
-        function closeNav() {
-        document.getElementById(
-        "myNav").style.height = "0%";
-        document.querySelector(".closebtn").style.display="none";
-        const mediaQuery = window.matchMedia("(max-width: 1170px)");
-        if (mediaQuery.matches) {
-        document.getElementById("hamburger-bar").style.display="block";}
-        }
-        
-        </script>
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <script>
-        ScrollReveal().reveal('html', { delay: 400, duration: 2000});
-        </script>
+            </section>
+            <section class="mt-112">
+                <div class="container">
+                    <div class="row">
+                        <!-- Side Nav -->
+                        <div class="col-3">
+                            <ul class="side-nav">
+                                <li>
+                                    <a data-scroll href="#project-overview">Project Overview</a>
+                                </li>
+                                <li>
+                                    <a data-scroll href="#empathize-define">Empathize + Define</a>
+                                </li>
+                                <li>
+                                    <a data-scroll href="#ideation">Ideation</a>
+                                </li>
+                                <li>
+                                    <a data-scroll href="#prototype-test">Prototype + Test</a>
+                                </li>
+                                <li>
+                                    <a data-scroll href="#result">Final Result</a>
+                                </li>
+                                <li>
+                                    <a data-scroll href="#learnings">Key Learnings</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-md-9">
+                            <!-- All project content past col-md-9 -->
+                            <div class="pb-4">
+                                <h3>Project Overview</h3>
+                            </div>
+                            <div class="row">
+                                <div class="col-md">
+                                    <p>
+                                        <b>About Wayfarer</b>: A destination website aimed at young people, ages 21-30, who travel frequently and are in search of new adventures worldwide.
+                                    </p>
+                                    
+                                    <p>
+                                        <b>Role / Brief</b>: Design and prototype 3 screens: a home page on desktop and mobile, a search tool on mobile, and a destination page on mobile. Briefly research competitors to back the features and design.
+                                    </p>
+                                    <p>
+                                        <b>Timeline</b>: 5 day design challenge.
+                                    </p>
+                                    <p class="mb-1">
+                                        <b>The Goal</b>
+                                        <ul>
+                                            <li>Research competitors</li>
+                                            <li>Translate my findings into a prototype using:</li>
+                                            <ul>
+                                                <li>UX principles</li>
+                                                <li>Visually appealing design patterns that also create a brand identity </li>
+                                            </ul>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+
+                             <div class="pb-4">
+                                <h3>Empathize + Define</h3>
+                            </div>
+                            <div class="row">
+                                <div class="col-md">
+                                    <p>
+                                        <b>Questions</b>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            What are the traveler’s motivations and pain points when planning or discovering trips?
+                                        </li> 
+                                        <li>What influences a traveler to choose a landmark?</li>
+                                        <li>How can the design visually enhance the user’s experience while browsing for destinations?</li>
+                                        <li>What is the best way to structure the site so the user isn’t overwhelmed?</li>
+                                        <li>What features would be useful or expected when searching for travel destinations?</li>
+                                    </ul>
+                                    
+
+                                    <p>
+                                        <b>Competitive Analysis</b>
+                                    </p>
+                                    <p>
+                                        I wanted to understand what kind of <i>tone</i> destination sites use, what kind of <i>features</i> would be useful for a traveler, and how information is <i>structured</i>.
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="mt-112 mb-48">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="row footer-links">
+                                <div class="col-md">
+                                    <a href="https://linkedin.com/in/eylenkim" target="_blank">
+                                        <h4>
+                                        LinkedIn
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div class="col-md">
+                                    <a href="https://behance.net/eylen" target="_blank">
+                                        <h4>
+                                        Behance
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div class="col-md">
+                                    <a href="https://twitter.com/EylenAndTheCode" target="_blank">
+                                        <h4>
+                                        Twitter
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div class="col-md">
+                                    <a href="https://github.com/eylenkim" target="_blank">
+                                        <h4>
+                                        Github
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div class="col-md">
+                                    <a href="https://medium.com/@eylenkim" target="_blank">
+                                        <h4>
+                                        Medium
+                                        </h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm copyright">
+                            <h4>&copy; Eylen Kim <script>document.write(new Date().getFullYear())</script> &ndash; Self-Coded ✶</h4>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            
+            <script>
+            function openNav() {
+            document.getElementById(
+            "myNav").style.height = "100%";
+            document.getElementById("hamburger-bar").style.display="none";
+            document.querySelector(".closebtn").style.display="block";
+            
+            }
+            
+            function closeNav() {
+            document.getElementById(
+            "myNav").style.height = "0%";
+            document.querySelector(".closebtn").style.display="none";
+            const mediaQuery = window.matchMedia("(max-width: 1170px)");
+            if (mediaQuery.matches) {
+            document.getElementById("hamburger-bar").style.display="block";}
+            }
+            
+            </script>
+            <script >
+            var oldParent = document.querySelector('.nav-wrapper');
+            var oldChild = document.querySelector('.col-3');
+            window.onscroll = function() {
+            myFunction()
+            };
+            var headerContainer = document.querySelector(".col-3");
+            var equilibrium = headerContainer.offsetTop;
+            function myFunction() {
+            if (window.pageYOffset > equilibrium) {
+            oldChild.classList.add("sticky");
+            } else {
+            oldChild.classList.remove("sticky");
+            }
+            }
+            </script>
+            <script src="https://unpkg.com/scrollreveal"></script>
+            <script>
+            ScrollReveal().reveal('html', { delay: 400, duration: 2000});
+            </script>
+        </div>
         <body>
         </html>

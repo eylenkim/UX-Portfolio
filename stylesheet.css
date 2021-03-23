@@ -38,6 +38,7 @@ p.med {
 p {
 	font-size: 17px;
 	line-height: 27px;
+	margin-bottom: 2rem !important;
 }
 
 h4 {
@@ -107,9 +108,13 @@ ul:not(#main-menu > ul) {
 	list-style: none;
 }
 
-#main-menu > ul > li:before {
+#main-menu > ul > li:before, .side-nav > li:before {
 	content: none;
 }
+
+
+
+
 
 /***** Nav bar ******/
 #main-menu {
@@ -201,6 +206,47 @@ ul:not(#main-menu > ul) {
 	right: 8vw;
 	font-size: 70px;
 }
+
+/* Fixed Side Nav */
+
+	.header-nav-list {
+		display: inline-flex;
+		flex-wrap: wrap;
+		float: left;
+	}
+	.top-container {
+		background-color: #f1f1f1;
+		text-align: center;
+	}
+	.header {
+		background: transparent;
+		color: black;
+	}
+	.sticky {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		background-color: #ffffff !important;
+		height: 70px;
+		margin-top: -17px;
+		color: #f1f1f1;
+		transition: .5s;
+		padding-bottom: 2vw;
+	}
+	.sticky+.content {
+		padding-top: 102px;
+	}
+
+    .nav-wrapper {
+    	display: flex;
+       flex-direction: column;
+       min-height: 100vh;
+    }
+
+
+
+
+
 
 @media (min-width:1171px) and (max-width:1350px) {
 	#main-menu {
