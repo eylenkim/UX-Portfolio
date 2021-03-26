@@ -86,6 +86,7 @@ img {
 
 .side-nav li a:hover, .side-nav li a.active {
     font-weight: bold;
+    color: #c7430a !important;
 }
 
 
