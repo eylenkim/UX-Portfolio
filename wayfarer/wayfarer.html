@@ -20,40 +20,35 @@
     </head>
     <body>
         <div class="nav-wrapper">
-            <header>
-                <div class="nav-wrap">
-                    <nav id="main-menu">
-                        <ul class="nav-left">
-                            <li><a href="../home.html"><img src="../assets/Logo.svg"/></a></li>
-                        </ul>
-                        <ul class="nav-center">
-                            <li><a href="#">UX/UI</a></li>
-                            <li><a href="#">Web Development</a></li>
-                            <li><a href="#">Visual Design</a></li>
-                        </ul>
-                        <ul class="nav-right">
-                            <li><a href="#">About Me</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                        <span id="hamburger-bar"onclick="openNav()">
-                            <img data-src="../assets/nav-bar.svg"/>
-                        </span>
-                        <a href="javascript:void(0)"class="closebtn"onclick="closeNav()">
-                            ×
-                            </
-                        </nav>
-                        <! -- Responsive Nav Bar -->
-                        <div id="myNav"class="overlay">
-                            <div class="overlay-content">
-                                <a href="#">UX/UI</a>
-                                <a href="#">Web Development</a>
-                                <a href="#">Visual Design</a>
-                                <a href="#">About Me</a>
-                                <a href="#">Contact</a>
-                            </div>
-                        </div>
+        <header>
+            <div class="nav-wrap">
+                <nav id="main-menu">
+                    <ul class="nav-left">
+                        <li><a href="../home.html"><img src="../assets/Logo.svg"/></a></li>
+                    </ul>
+                    <ul class="nav-right">
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <span id="hamburger-bar" onclick="openNav()">
+                        <img src="../assets/nav-bar.svg" />
+                    </span>
+                    <a href="javascript:void(0)"
+                        class="closebtn" onclick="closeNav()">
+                        ×
+                    </a>
+                    
+                </nav>
+                <! -- Responsive Nav Bar -->
+                <div id="myNav" class="overlay">
+                    <div class="overlay-content">
+                        <a href="../home.html">Home</a>
+                        <a href="#">About Me</a>
+                        <a href="#">Contact</a>
                     </div>
-                </header>
+                </div>
+            </div>
+        </header>
                 <section class="mt-176">
                     <div class="container">
                         <div class="row">
@@ -159,10 +154,10 @@
                                             </ul>
                                         </div>
                                         <div class="sub-section-p">
-                                            <p class="mb-24">
+                                            <p class="mb-8">
                                                 <b>Competitive Analysis</b>
                                             </p>
-                                            <p>
+                                            <p class="mb-48">
                                                 I wanted to understand what kind of <i>tone</i> destination sites use, what kind of <i>features</i> would be useful for a traveler, and how information is <i>structured</i>.
                                             </p>
                                             <div class="row">
@@ -344,10 +339,10 @@
                                             <img class="lazy" data-src="font-selection.svg" />
                                         </div>
                                         <div class="sub-section-p mb-80">
-                                            <p class="mb-24">
+                                            <p class="mb-8">
                                                 <b>Color Palette Selection</b>
                                             </p>
-                                            <p>
+                                            <p class="mb-24">
                                                 The palette colors are borrowed from the outdoors. This is very applicable for the brand and the subtle pop of colors are very youthful and energizing.
                                             </p>
                                             <div class="row">
@@ -602,20 +597,22 @@
                                             Scroll through the interactive figma prototypes below to see the finished result!
                                         </p>
                                     </div>
-                                    <div class="col-md-12">
+                                    <div class="col-md-12 mb-48">
                                         <p>
                                             <b>
                                             Desktop Home Screen
                                             </b>
                                         </p>
+                                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="750" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FND9camHCRA7Ev25uqHNqVp%2FWayfarer%3Fnode-id%3D187%253A1839%26viewport%3D-59%252C481%252C0.150188148021698%26scaling%3Dmin-zoom" allowfullscreen></iframe>
                                     </div>
-                                    <div class="col-md-12">
+                                    <div class="col-md-5">
                                         <p>
                                             <b>
                                             Mobile Home Screen
                                             </b>
-                                            
                                         </p>
+                                           <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="750" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FND9camHCRA7Ev25uqHNqVp%2FWayfarer%3Fnode-id%3D301%253A3901%26viewport%3D514%252C1078%252C0.32815781235694885%26scaling%3Dmin-zoom" allowfullscreen></iframe>
+                                        
                                     </div>
                                 </div>
                                 <div class="section-divide"></div>
@@ -637,6 +634,21 @@
                                         </p>
                                     </div>
                                 </div>
+                                 <div class="section-divide"></div>
+
+                                <!-----------  Go Back ------------->
+                                <div class="sub-section-title mt-80">
+                                    <a href="../home.html">
+                                    <h3>
+                                        <img style="width: 41px;margin-right: 24px;" src="../assets/back-arrow.svg"> 
+                                        All projects
+                                    </h3>
+                                    </a>
+                                </div>
+                             </div>
+                               
+                                
+
                                 <!-----------------------------  CUSTOM CONTENT ENDS HERE---------------------------------->
                             </div>
                         </div>
@@ -815,7 +827,7 @@
 
 $(window).on('scroll', function() {
     $('.target').each(function() {
-        if($(window).scrollTop() >= $(this).offset().top) {
+        if(($(window).scrollTop()+500) >= $(this).offset().top) {
             var id = $(this).attr('id');
             $('.side-nav li a').removeClass('active');
             $('.side-nav li a[href="#'+ id +'"]').addClass('active');
