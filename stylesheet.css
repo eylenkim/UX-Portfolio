@@ -407,8 +407,7 @@ padding-top: 69.25%;
 
 .box img, .box .description{
 width: 100%;
-height: -webkit-fill-available;
-height: fill-available;
+height: 100%
 object-fit: cover;
 overflow: hidden;
 position: absolute;
