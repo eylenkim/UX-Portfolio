@@ -24,10 +24,30 @@
 	src: url("assets/fonts/Graphik/Graphik-RegularItalic.woff") format("woff");
 }
 
+@font-face {
+	font-family: "Graphik-SemiBold";
+	src: url("assets/fonts/Graphik/GraphikLCG-Semibold.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Sub-font";
+	src: url("assets/fonts/Agrandir/Agrandir-TextBold.woff") format("woff");
+}
+
 h1, h2, h3 {
 	font-family: "Agrandir";
 	font-size: 24px !important;
 }
+
+.font-17 {
+	font-size: 17px;
+}
+
+p > b, p.mb-24 > b {
+	font-size: 20px;
+	/*font-family: "Sub-font";*/
+}
+
 
 h1 {
 	font-family: "Agrandir";
