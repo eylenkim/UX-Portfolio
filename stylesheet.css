@@ -122,6 +122,8 @@ img {
 	color: #c7430a !important;
 }
 
+
+
 /***** Margins ******/
 .mt-176 {
 	margin-top: 11rem !important;
@@ -516,6 +518,7 @@ margin-bottom: 72px;
 .row > div > img {
 width: 100%;
 object-fit: cover;
+-webkit-transform: translate3d(0,0,0)
 }
 
 @media (min-width:1350px) {
