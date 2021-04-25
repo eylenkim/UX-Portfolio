@@ -44,16 +44,13 @@ h1, h2, h3 {
 	font-size: 18px !important;
 }
 
-
 .font-17 {
 	font-size: 17px;
 }
 
 p > b, p.mb-24 > b {
-	font-size: 20px;
-	/*font-family: "Sub-font";*/
+	font-size: 20px;	/*font-family: "Sub-font";*/
 }
-
 
 h1 {
 	font-family: "Agrandir";
@@ -134,8 +131,6 @@ img {
 	color: #c7430a !important;
 }
 
-
-
 /***** Margins ******/
 .mt-176 {
 	margin-top: 11rem !important;
@@ -152,7 +147,6 @@ img {
 .mb-80 {
 	margin-bottom: 5rem !important;
 }
-
 
 .mt-80 {
 	margin-top: 5rem !important;
@@ -189,17 +183,17 @@ a {
 	color: black !important;
 	transition: .5s;
 	-webkit-transition: .5s;
-    -moz-transition: .5s;
-    -o-transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
 }
 
 a p:hover, p>a:hover, a:hover {
 	color: #B7410E !important;
 	transition: .5s;
-		transition: .5s;
+	transition: .5s;
 	-webkit-transition: .5s;
-    -moz-transition: .5s;
-    -o-transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
 }
 
 .copyright {
@@ -231,34 +225,34 @@ ul:not(#main-menu > ul) {
 	padding-bottom: 24px;
 }
 
- img.lazy {
-        opacity: 0;
-      }
-      img:not(.initial) {
-        transition: opacity 1s;
-      }
-      img.initial,
-      img.loaded,
-      img.error {
-        opacity: 1;
-      }
+img.lazy {
+	opacity: 0;
+}
 
-      img:not([src]) {
-        visibility: hidden;
-      }
+img:not(.initial) {
+	transition: opacity 1s;
+}
+
+img.initial, img.loaded, img.error {
+	opacity: 1;
+}
+
+img:not([src]) {
+	visibility: hidden;
+}
 
 .pill-button {
-background-color: transparent;
-    border: 1px solid black;
-    color: black;
-    padding: 14px 100px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
-    box-shadow: -4.81px 4.66px 10.61px rgba(0, 0, 0, 0.17);
-    border-radius: 46px;
+	background-color: transparent;
+	border: 1px solid black;
+	color: black;
+	padding: 14px 100px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	cursor: pointer;
+	box-shadow: -4.81px 4.66px 10.61px rgba(0, 0, 0, 0.17);
+	border-radius: 46px;
 }
 
 hr {
@@ -331,10 +325,10 @@ hr {
 	background-color: #FCFCFC !important;
 	overflow-y: hidden;
 	transition: 1.0s;
-		transition: 1.0s;
+	transition: 1.0s;
 	-webkit-transition: 1.0s;
-    -moz-transition: 1.0s;
-    -o-transition: .1.0s;
+	-moz-transition: 1.0s;
+	-o-transition: .1.0s;
 	z-index: 10;
 }
 
@@ -394,10 +388,10 @@ height: 70px;
 margin-top: -17px;
 color: #f1f1f1;
 transition: .5s;
-	transition: .5s;
-	-webkit-transition: .5s;
-    -moz-transition: .5s;
-    -o-transition: .5s;
+transition: .5s;
+-webkit-transition: .5s;
+-moz-transition: .5s;
+-o-transition: .5s;
 padding-bottom: 2vw;
 }
 
@@ -424,7 +418,6 @@ position: absolute;
 top: 765px;
 z-index: 100;
 }
-
 
 @media (min-width:1171px) and (max-width:1350px) {
 #main-menu {
@@ -565,17 +558,17 @@ text-transform: uppercase;
 }
 
 .align-center {
-	align-self: center;
+align-self: center;
 }
 
 .figma-desktop {
-	width: 100%;
-	 height: 750px;
+width: 100%;
+height: 750px;
 }
 
 .figma-mobile {
-	width: 100%; 
-	height:750px;
+width: 100%;
+height: 750px;
 }
 
 .project-role {
