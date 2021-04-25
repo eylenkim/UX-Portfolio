@@ -231,6 +231,22 @@ ul:not(#main-menu > ul) {
 	padding-bottom: 24px;
 }
 
+ img.lazy {
+        opacity: 0;
+      }
+      img:not(.initial) {
+        transition: opacity 1s;
+      }
+      img.initial,
+      img.loaded,
+      img.error {
+        opacity: 1;
+      }
+
+      img:not([src]) {
+        visibility: hidden;
+      }
+
 .pill-button {
 background-color: transparent;
     border: 1px solid black;
