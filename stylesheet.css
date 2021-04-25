@@ -253,6 +253,7 @@ img:not([src]) {
 	cursor: pointer;
 	box-shadow: -4.81px 4.66px 10.61px rgba(0, 0, 0, 0.17);
 	border-radius: 46px;
+	    white-space: normal;
 }
 
 hr {
