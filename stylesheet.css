@@ -253,7 +253,13 @@ img:not([src]) {
 	cursor: pointer;
 	box-shadow: -4.81px 4.66px 10.61px rgba(0, 0, 0, 0.17);
 	border-radius: 46px;
-	    white-space: normal;
+	white-space: normal;
+	transition: .5s;
+}
+
+.pill-button:hover {
+	color: #c7430a;
+	transition: .5s;
 }
 
 hr {
