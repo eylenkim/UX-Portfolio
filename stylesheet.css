@@ -176,6 +176,10 @@ img {
 margin-bottom: 16px !important;
 }
 
+.mb-32 {
+	margin-bottom: 32px !important;
+}
+
 /***** Column / Grid / Full Page******/
 * {
 	background-color: #FCFCFC !important;
