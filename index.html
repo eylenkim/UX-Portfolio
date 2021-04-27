@@ -72,7 +72,7 @@
                     <div class="col-xl-6">
                         <a href="spotify/spotify.html">
                             <div class="box">
-                                <img class="lazy" data-src="assets/home/spotify.png" />
+                                <img class="lazy" src="assets/home/spotify.png" />
                                 <div class="description">
                                     <p>
                                         UX/UI Design<br>Research & Testing<br>Design Guidelines
@@ -88,7 +88,7 @@
                     <div class="col-xl-6">
                         <a href="wayfarer/wayfarer.html">
                             <div class="box">
-                                <img class="lazy" data-src="assets/home/wayfarer.png" />
+                                <img class="lazy" src="assets/home/wayfarer.png" />
                                 <div class="description">
                                     <p>
                                         UX/UI DESIGN <br>VISUAL DESIGN<br>BRAND IDENTITY
@@ -106,7 +106,7 @@
                     <div class="col-xl-6">
                         <a href="https://eylenkim.github.io/ArtByEylen/" target="_blank">
                             <div class="box">
-                                <img class="lazy" data-src="assets/home/artbyeylen2.png" />
+                                <img class="lazy" src="assets/home/artbyeylen2.png" />
                                 <div class="description">
                                     <p>
                                         Front-End Web Development<br>UI DESIGN<br>Visual Design
@@ -123,7 +123,7 @@
                     <div class="col-xl-6">
                         <a href="logos/logos">
                             <div class="box">
-                                <img class="lazy" data-src="assets/home/coming-soon.png" />
+                                <img class="lazy" src="assets/home/coming-soon.png" />
                                 <div class="description">
                                     <p>
                                         Front-End Web Development <br> Liquid Tags
@@ -234,45 +234,7 @@
         gtag('js', new Date());
         gtag('config', 'G-0R00BE6CGZ');
         </script>
-                <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
-        <!----- Lazy Load ----->
-        <script>
-        (function() {
-        function logElementEvent(eventName, element) {
-        console.log(Date.now(), eventName, element.getAttribute("data-src"));
-        }
-        var callback_enter = function(element) {
-        logElementEvent("🔑 ENTERED", element);
-        }
-        ;
-        var callback_exit = function(element) {
-        logElementEvent("🚪 EXITED", element);
-        }
-        ;
-        var callback_reveal = function(element) {
-        logElementEvent("👁️ REVEALED", element);
-        }
-        ;
-        var callback_loaded = function(element) {
-        logElementEvent("👍 LOADED", element);
-        }
-        ;
-        var callback_error = function(element) {
-        logElementEvent("💀 ERROR", element);
-        element.src ="https://via.placeholder.com/440x560/?text=Error+Placeholder";
-        }
-        ;
-        var callback_finish = function() {
-        logElementEvent("✔️ FINISHED", document.documentElement);
-        }
-        ;
-        ll = new LazyLoad( {
-        elements_selector: ".lazy", load_delay:300, threshold:500, // Assign the callbacks defined above
-        callback_enter:callback_enter, callback_exit:callback_exit, callback_reveal:callback_reveal, callback_loaded:callback_loaded, callback_error:callback_error, callback_finish:callback_finish
-        }
-        );
-        }
-        )();
-        </script>
+        
+      
         <body>
         </html>
