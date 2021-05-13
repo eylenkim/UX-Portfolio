@@ -180,6 +180,11 @@ margin-bottom: 16px !important;
 	margin-bottom: 32px !important;
 }
 
+.no-hover, .no-hover:hover {
+	color: black !important;
+}
+
+
 /***** Column / Grid / Full Page******/
 * {
 	background-color: #FCFCFC !important;
@@ -525,6 +530,9 @@ margin-bottom: 16px !important;
 text-transform: uppercase;
 }
 
+.u-text-center {
+	text-align: center;
+}
 .project-hover > div> div >  a:hover {
 color: black !important;
 font-weight: normal;
