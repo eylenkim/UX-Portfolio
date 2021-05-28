@@ -173,7 +173,7 @@ img {
 }
 
 .mb-16 {
-margin-bottom: 16px !important;
+	margin-bottom: 16px !important;
 }
 
 .mb-32 {
@@ -183,8 +183,6 @@ margin-bottom: 16px !important;
 .no-hover, .no-hover:hover {
 	color: black !important;
 }
-
-
 
 /***** Column / Grid / Full Page******/
 * {
@@ -309,13 +307,12 @@ hr {
 
 .quote {
 	font-style: italic;
-	    font-size: 26px !important;
-    width: 95%;
-    margin: auto;
-    padding-bottom: 24px;
-   
+	font-size: 26px !important;
+	width: 95%;
+	margin: auto;
+	padding-bottom: 24px;
+	line-height: 37px;
 }
-
 
 .nav-wrap {
 	position: absolute;
@@ -420,7 +417,7 @@ position: fixed;
 top: 198px;
 width: 100%;
 background-color: #FCFCFC !important
-height: 70px;
+height:70px;
 margin-top: -17px;
 color: #f1f1f1;
 transition: .5s;
@@ -547,8 +544,9 @@ text-transform: uppercase;
 }
 
 .u-text-center {
-	text-align: center;
+text-align: center;
 }
+
 .project-hover > div> div >  a:hover {
 color: black !important;
 font-weight: normal;
